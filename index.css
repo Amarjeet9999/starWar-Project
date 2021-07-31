@@ -1,0 +1,265 @@
+/** @format */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+html {
+  font-size: 62.5%;
+  max-height: 100%;
+}
+
+body {
+  background-color: #000000;
+  padding: 0 2rem;
+  background-image: url("https://64.media.tumblr.com/d96d6d4360f27da5c47221e68cdff36f/tumblr_olucp2SNGx1vsjcxvo1_r1_640.gifv");
+  background-size: cover;
+}
+body ::-webkit-scrollbar {
+  width: 0;
+}
+.container {
+  max-width: 60rem;
+  height: 40rem;
+  margin: 20rem auto;
+  /* border: 2px solid red; */
+}
+.container .searchBox {
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.18);
+  position: relative;
+  background-color: #2d2f30;
+  border-radius: 2rem;
+}
+.logo {
+  height: 10rem;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8%;
+}
+.logo img {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  margin: auto;
+}
+
+.searchBox input {
+  height: 6rem;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  padding: 0 0rem 0 3rem;
+  font-size: 2rem;
+  background-color: #2d2f30;
+  color: rgb(232, 240, 246);
+}
+.searchBox .icon {
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #000000;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #ffeb00;
+  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.2);
+  margin-top: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.searchSuggestion {
+  max-height: 28rem;
+  overflow-y: auto;
+  display: none;
+  /* border-top: 1px solid white; */
+  margin: 0% 3%;
+}
+
+.searchSuggestion li {
+  list-style: none;
+  padding: 0.8rem 1.2rem;
+  width: 100%;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 1.6rem;
+  margin-top: 3%;
+}
+.searchSuggestion li:hover {
+  color: #ffeb00;
+}
+
+.searchedItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 5%;
+}
+.spanYear {
+  font-size: 1.2rem !important;
+  margin-left: 3%;
+  margin-bottom: 3%;
+  color: rgb(175, 174, 174);
+  cursor: pointer;
+}
+
+#noResult {
+  color: rgb(179, 180, 180);
+  font-size: 1.3rem;
+  display: none;
+  width: fit-content;
+  margin: auto;
+  margin-top: 2%;
+}
+
+.detailsContainer {
+  max-width: 50rem;
+  height: 48rem;
+  margin: 7.5rem auto;
+  border-radius: 15px;
+  border: 2px solid red;
+  display: none;
+  color: rgb(214, 12, 12);
+}
+#nameDetails {
+  font-size: 3rem;
+  font-weight: 600;
+  background-color: transparent;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 8%;
+}
+.detailsContainer :hover {
+  color: white;
+}
+.divDetails {
+  height: 40%;
+  width: 100%;
+  margin-top: 8%;
+  display: flex;
+}
+.divDetailInner {
+  height: 100%;
+  width: 40%;
+  border: 3px solid rgb(248, 2, 2);
+  margin: auto;
+  border-radius: 1rem;
+  color: rgb(238, 6, 6);
+}
+.divDetails :hover {
+  color: white;
+  border: 3px solid rgb(255, 255, 255);
+}
+.headerDetail {
+  border: none !important;
+  background: transparent;
+  margin: auto;
+  width: 90%;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+#birthYearP {
+  height: 20%;
+  border: none !important;
+  width: 90%;
+  margin: auto;
+  margin-top: 6%;
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+#genderP {
+  height: 20%;
+  border: none !important;
+  width: 90%;
+  margin: auto;
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+#heightP {
+  height: 20%;
+  border: none !important;
+  width: 90%;
+  margin: auto;
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+#eyeColor {
+  height: 20%;
+  border: none !important;
+  width: 90%;
+  margin: auto;
+  margin-top: 6%;
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+#massP {
+  height: 20%;
+  border: none !important;
+  width: 90%;
+  margin: auto;
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+#hairColorP {
+  height: 20%;
+  border: none !important;
+  width: 90%;
+  margin: auto;
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+#btnDiv {
+  height: 10%;
+  width: 30%;
+  margin: auto;
+  margin-top: 10%;
+}
+#btnDiv :hover {
+  color: white !important;
+  border: 3px solid rgb(255, 255, 255);
+}
+#btnDiv button {
+  height: 100%;
+  width: 100%;
+  border: 3px solid rgb(184, 0, 0);
+  border-radius: 1rem;
+  color: red;
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: transparent;
+  cursor: pointer;
+}

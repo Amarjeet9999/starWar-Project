@@ -1,0 +1,55 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>StarWar Search Engine</title>
+    <link rel="shortcut icon" href="images/download.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="logo">
+        <img src="images/download.png" />
+      </div>
+      <div class="searchBox">
+        <input
+          oninput="throttleFunction()"
+          type="text"
+          placeholder="Search characters"
+          id="serch"
+        />
+        <div class="searchSuggestion" id="searchSuggestion"> </div>
+        <div class="icon">
+          <i class="material-icons">search</i>
+        </div>
+      </div>
+      <div id="noResult">No results found. Try again...</div>
+    </div>
+    <div id="detailsContainer" class="detailsContainer">
+      <div id="nameDetails"> </div>
+      <div class="divDetails">
+        <div class="divDetailInner">
+          <h2 class="headerDetail">Personal Info</h2>
+          <p id="birthYearP"></p>
+          <p id="genderP"></p>
+          <p id="heightP"></p>
+        </div>
+        <div class="divDetailInner">
+          <h2 class="headerDetail">Anatomy</h2>
+          <p id="eyeColor"></p>
+          <p id="massP"></p>
+          <p id="hairColorP"></p>
+        </div>
+      </div>
+      <div id="btnDiv">
+        <button onclick="backToHome()">Go Back</button>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="index.js"></script>
