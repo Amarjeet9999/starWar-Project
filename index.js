@@ -5,7 +5,6 @@ var timerId;
 async function searchCharacter() {
   let query = document.getElementById("serch").value;
   if (query.length <= 2) {
-    document.getElementById("noResult").style.display = "none";
     document.getElementById("searchSuggestion").style.borderTop = "none";
     document.getElementById("container").style.marginTop = "20rem";
     return false;
@@ -14,6 +13,8 @@ async function searchCharacter() {
   let data = await res.json();
   if (data.results.length == 0) {
     document.getElementById("noResult").style.display = "block";
+  } else if (data.results.length !== 0) {
+    document.getElementById("noResult").style.display = "none";
   }
   return data.results;
 }
